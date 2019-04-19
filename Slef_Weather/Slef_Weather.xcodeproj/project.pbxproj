@@ -15,7 +15,11 @@
 		070884132267315B00276324 /* Slef_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070884122267315B00276324 /* Slef_WeatherTests.swift */; };
 		0708841E2267315B00276324 /* Slef_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0708841D2267315B00276324 /* Slef_WeatherUITests.swift */; };
 		07381FEE2269BA7500167051 /* ExtUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07381FED2269BA7500167051 /* ExtUIViewController.swift */; };
-		07381FFC2269DD6200167051 /* Net in Resources */ = {isa = PBXBuildFile; fileRef = 07381FFB2269DD6200167051 /* Net */; };
+		073820032269DEE700167051 /* NetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07381FFF2269DEE700167051 /* NetResponse.swift */; };
+		073820042269DEE700167051 /* NetQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07381FFE2269DEE700167051 /* NetQueue.swift */; };
+		073820052269DEE700167051 /* NetDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073820012269DEE700167051 /* NetDownload.swift */; };
+		073820062269DEE700167051 /* NetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073820022269DEE700167051 /* NetError.swift */; };
+		073820072269DEE700167051 /* NetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073820002269DEE700167051 /* NetRequest.swift */; };
 		929C4D1051AB0532215C31B4 /* libPods-Slef_Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43218E6B59EC0F368DCF9D /* libPods-Slef_Weather.a */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +55,11 @@
 		0708841D2267315B00276324 /* Slef_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slef_WeatherUITests.swift; sourceTree = "<group>"; };
 		0708841F2267315B00276324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07381FED2269BA7500167051 /* ExtUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIViewController.swift; sourceTree = "<group>"; };
-		07381FFB2269DD6200167051 /* Net */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Net; sourceTree = "<group>"; };
+		07381FFE2269DEE700167051 /* NetQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetQueue.swift; sourceTree = "<group>"; };
+		07381FFF2269DEE700167051 /* NetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetResponse.swift; sourceTree = "<group>"; };
+		073820002269DEE700167051 /* NetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetRequest.swift; sourceTree = "<group>"; };
+		073820012269DEE700167051 /* NetDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetDownload.swift; sourceTree = "<group>"; };
+		073820022269DEE700167051 /* NetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetError.swift; sourceTree = "<group>"; };
 		1D43218E6B59EC0F368DCF9D /* libPods-Slef_Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Slef_Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD9B673EC4D7049B19BE18B /* Pods-Slef_Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slef_Weather.debug.xcconfig"; path = "Target Support Files/Pods-Slef_Weather/Pods-Slef_Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		562205DBB9DA9A1B41843C33 /* Pods-Slef_Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slef_Weather.release.xcconfig"; path = "Target Support Files/Pods-Slef_Weather/Pods-Slef_Weather.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,13 +117,13 @@
 			isa = PBXGroup;
 			children = (
 				070884042267315B00276324 /* Assets.xcassets */,
+				07381FFD2269DECC00167051 /* Net */,
 				07381FF42269CC5600167051 /* Common */,
 				07381FF02269CC1600167051 /* Model */,
 				07381FF12269CC2800167051 /* View */,
 				07381FF22269CC3100167051 /* Controller */,
 				07381FF32269CC4900167051 /* Extension */,
 				07381FF52269CC5E00167051 /* Venter */,
-				07381FFB2269DD6200167051 /* Net */,
 				070883FD2267315A00276324 /* AppDelegate.swift */,
 				070884092267315B00276324 /* Info.plist */,
 			);
@@ -184,6 +192,18 @@
 			children = (
 			);
 			path = Venter;
+			sourceTree = "<group>";
+		};
+		07381FFD2269DECC00167051 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				07381FFF2269DEE700167051 /* NetResponse.swift */,
+				073820012269DEE700167051 /* NetDownload.swift */,
+				073820022269DEE700167051 /* NetError.swift */,
+				07381FFE2269DEE700167051 /* NetQueue.swift */,
+				073820002269DEE700167051 /* NetRequest.swift */,
+			);
+			path = Net;
 			sourceTree = "<group>";
 		};
 		3BFE3F7DAA8929721D8270C4 /* Pods */ = {
@@ -311,7 +331,6 @@
 			files = (
 				070884082267315B00276324 /* LaunchScreen.storyboard in Resources */,
 				070884052267315B00276324 /* Assets.xcassets in Resources */,
-				07381FFC2269DD6200167051 /* Net in Resources */,
 				070884032267315A00276324 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +405,12 @@
 			files = (
 				070884002267315A00276324 /* HomeViewController.swift in Sources */,
 				070883FE2267315A00276324 /* AppDelegate.swift in Sources */,
+				073820042269DEE700167051 /* NetQueue.swift in Sources */,
+				073820072269DEE700167051 /* NetRequest.swift in Sources */,
+				073820062269DEE700167051 /* NetError.swift in Sources */,
+				073820032269DEE700167051 /* NetResponse.swift in Sources */,
 				07381FEE2269BA7500167051 /* ExtUIViewController.swift in Sources */,
+				073820052269DEE700167051 /* NetDownload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
