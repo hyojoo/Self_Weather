@@ -1,0 +1,10 @@
+
+platform :ios, '11.0'
+
+target 'Slef_Weather' do
+
+pod 'FWPopupView'
+pod 'Alamofire', '~>4.7.3'
+pod 'ZYProgressView'
+
+end

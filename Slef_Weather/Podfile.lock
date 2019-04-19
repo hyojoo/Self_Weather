@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.7.3)
+  - FWPopupView (4.0.1):
+    - SnapKit
+  - SnapKit (4.2.0)
+  - ZYProgressView (0.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - FWPopupView
+  - ZYProgressView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FWPopupView
+    - SnapKit
+    - ZYProgressView
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  FWPopupView: a463a17aab606b0ef222a68784dbf32accba4711
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  ZYProgressView: 8584f543dbd8b8374bcd33cfc2fe259c296d4ded
+
+PODFILE CHECKSUM: 8575a9d5ab75e3bdd6f0aece3f9b270333689c71
+
+COCOAPODS: 1.6.1
